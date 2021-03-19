@@ -52,10 +52,14 @@ Start Docker Compose:
 
     docker-compose up -d
 
+Após o start completo de todos os containers abra o browser e acesse o seguinte endereço: 
+
+http://localhost:3000
+
 
 ## Backend Setup
 
-Após boot up dos containers o MySQL database estará pronto para receber conexões, no entanto, 
+Após start up dos containers o MySQL database estará pronto para receber conexões, no entanto, 
 é necessário efetuar o _migration_ da tabela `incidents` para o funcionamento correto
 do app, conforme detalhado a seguir.
 
