@@ -20,6 +20,22 @@ services:
       - ./backend:/var/www/html
     depends_on:
       - mysql
+
+  app:
+    image: node:latest
+    container_name: incident-frontend
+    command: sh -c "npm install && npm start"
+    restart: always
+    networks:
+      - incident-net
+    ports:
+      - 3000:3000
+    working_dir: /src/app
+    volumes:
+      - ./frontend:/src/app
+    depends_on:
+      - api
+
   mysql:
     image: mysql:8.0.23
     container_name: incident-database
