@@ -114,7 +114,7 @@ Tests:  11 passed
 Time:   1.28s
 ```
 
-> _Por questões de simplicidade e praticidade frontend não possui unit possui testes_
+> _Por questões de simplicidade e praticidade frontend não possui unit testes_
 
 
 ### Data Structure / Validation
